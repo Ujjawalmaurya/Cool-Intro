@@ -25,9 +25,16 @@ class _HomeState extends State<Home> {
   List<String> kFont = [
     'Hello :)',
     'I am Ujjawal',
-    'a Blah! Blah! developer',
-    'I Like to write code',
-    'I can develop applications for many different plateforms like: Windows, Linux, Web-Applications and for Android also'
+    'I write code for Fun',
+    'A Computer Science Engineering student and Blah! Blah! developer',
+    'haha',
+  ];
+  List<double> kFontSize = [
+    100.0,
+    65.0,
+    40.0,
+    35.0,
+    30.0,
   ];
   @override
   Widget build(BuildContext context) {
@@ -35,9 +42,9 @@ class _HomeState extends State<Home> {
       body: LiquidSwipe(
         initialPage: 0,
         waveType: WaveType.liquidReveal,
-        fullTransitionValue: 850,
-        positionSlideIcon: 0,
-        // enableSlideIcon: true,
+        fullTransitionValue: 750,
+        positionSlideIcon: 0.20,
+        enableSlideIcon: true,
         pages: [
           Container(
             padding: EdgeInsets.all(10.0),
@@ -52,7 +59,8 @@ class _HomeState extends State<Home> {
                           Text(
                             kFont[0],
                             style: TextStyle(
-                                fontSize: 100.0, fontWeight: FontWeight.w900),
+                                fontSize: kFontSize[0],
+                                fontWeight: FontWeight.w900),
                           ),
                         ],
                       )
@@ -76,11 +84,12 @@ class _HomeState extends State<Home> {
                           Text(
                             kFont[0],
                             style: TextStyle(
-                                fontSize: 100.0, fontWeight: FontWeight.w900),
+                                fontSize: kFontSize[0],
+                                fontWeight: FontWeight.w900),
                           ),
                         ],
                       ),
-                      Text(kFont[1], style: TextStyle(fontSize: 65.0)),
+                      Text(kFont[1], style: TextStyle(fontSize: kFontSize[1])),
                     ],
                   ),
                 ),
@@ -100,16 +109,18 @@ class _HomeState extends State<Home> {
                         children: [
                           Text(kFont[0],
                               style: TextStyle(
-                                  fontSize: 100.0,
+                                  fontSize: kFontSize[0],
                                   fontWeight: FontWeight.w900)),
                         ],
                       ),
                       Text(kFont[1],
                           style: TextStyle(
-                              fontSize: 65.0, fontWeight: FontWeight.w400)),
+                              fontSize: kFontSize[1],
+                              fontWeight: FontWeight.w400)),
                       Text(kFont[2],
                           style: TextStyle(
-                              fontSize: 50, fontWeight: FontWeight.w300)),
+                              fontSize: kFontSize[2],
+                              fontWeight: FontWeight.w300)),
                       // Text('I Like to Code Everyday')
                     ],
                   ),
@@ -130,19 +141,22 @@ class _HomeState extends State<Home> {
                         children: [
                           Text(kFont[0],
                               style: TextStyle(
-                                  fontSize: 100.0,
+                                  fontSize: kFontSize[0],
                                   fontWeight: FontWeight.w900)),
                         ],
                       ),
                       Text(kFont[1],
                           style: TextStyle(
-                              fontSize: 65.0, fontWeight: FontWeight.w400)),
+                              fontSize: kFontSize[1],
+                              fontWeight: FontWeight.w400)),
                       Text(kFont[2],
                           style: TextStyle(
-                              fontSize: 50, fontWeight: FontWeight.w300)),
+                              fontSize: kFontSize[2],
+                              fontWeight: FontWeight.w300)),
                       Text(kFont[3],
                           style: TextStyle(
-                              fontSize: 40, fontWeight: FontWeight.w500)),
+                              fontSize: kFontSize[3],
+                              fontWeight: FontWeight.w500)),
                     ],
                   ),
                 ),
@@ -162,22 +176,26 @@ class _HomeState extends State<Home> {
                         children: [
                           Text(kFont[0],
                               style: TextStyle(
-                                  fontSize: 100.0,
+                                  fontSize: kFontSize[0],
                                   fontWeight: FontWeight.w900)),
                         ],
                       ),
                       Text(kFont[1],
                           style: TextStyle(
-                              fontSize: 65.0, fontWeight: FontWeight.w400)),
+                              fontSize: kFontSize[1],
+                              fontWeight: FontWeight.w400)),
                       Text(kFont[2],
                           style: TextStyle(
-                              fontSize: 50, fontWeight: FontWeight.w300)),
+                              fontSize: kFontSize[2],
+                              fontWeight: FontWeight.w300)),
                       Text(kFont[3],
                           style: TextStyle(
-                              fontSize: 40, fontWeight: FontWeight.w500)),
+                              fontSize: kFontSize[3],
+                              fontWeight: FontWeight.w500)),
                       Text(kFont[4],
                           style: TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.w300)),
+                              fontSize: kFontSize[4],
+                              fontWeight: FontWeight.w300)),
                     ],
                   ),
                 ),
